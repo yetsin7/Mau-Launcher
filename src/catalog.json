@@ -1,0 +1,119 @@
+[
+  {
+    "id": "guanacaste",
+    "name": "Guanacaste 3D",
+    "repo": "yetsin7/guanacaste-3d",
+    "category": "Arquitectura",
+    "description": "Modelado BIM, planos y render arquitectónico.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "movies",
+    "name": "Mau Movies",
+    "repo": "yetsin7/my-movies",
+    "category": "Multimedia",
+    "description": "Biblioteca y reproductor local de películas.",
+    "platforms": [
+      "win32"
+    ]
+  },
+  {
+    "id": "music",
+    "name": "Mau Music",
+    "repo": "yetsin7/My-Music",
+    "category": "Multimedia",
+    "description": "Reproductor de música y listas personales. Pendiente de publicación del repositorio.",
+    "platforms": [
+      "win32"
+    ],
+    "pending": true
+  },
+  {
+    "id": "programming",
+    "name": "Programming Course",
+    "repo": "yetsin7/programming-course",
+    "category": "Educación",
+    "description": "Curso interactivo para aprender programación.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "bible",
+    "name": "Mi Biblia PC",
+    "repo": "yetsin7/mi_biblia_pc",
+    "category": "Lectura",
+    "description": "Aplicación de lectura bíblica para computadora.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "openrender",
+    "name": "OpenRender",
+    "repo": "yetsin7/OpenRender",
+    "category": "Diseño",
+    "description": "Proyecto público de renderizado; revisar compilaciones disponibles.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "craft",
+    "name": "Craft Anything",
+    "repo": "yetsin7/craft-anything",
+    "category": "Desarrollo",
+    "description": "Proyecto público para explorar y crear software.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "claude",
+    "name": "OpenClaude",
+    "repo": "yetsin7/openclaude",
+    "category": "Desarrollo",
+    "description": "Proyecto público de herramientas para programación.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "reader",
+    "name": "Lector Web TTS",
+    "repo": "yetsin7/Lector-web-TTS",
+    "category": "Accesibilidad",
+    "description": "Lector de contenido web por voz.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "downloader",
+    "name": "YouTube Download",
+    "repo": "yetsin7/youtube_download",
+    "category": "Multimedia",
+    "description": "Utilidad de descarga; instalador por verificar.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  }
+]
