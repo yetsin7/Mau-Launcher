@@ -23,6 +23,8 @@ jobs:
           node --check src/preload.js
           node --check src/renderer.js
           node -e "const c=require('./src/catalog.json'); if(new Set(c.map(x=>x.id)).size!==c.length) process.exit(1)"
+      - name: Test release selection and validate source
+        run: npm run check
       - name: Package without publishing
         run: npx electron-builder --publish never
       - uses: actions/upload-artifact@v4
