@@ -1,0 +1,32 @@
+name: Validate and package Mau Launcher
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - name: Validate JavaScript and catalog
+        run: |
+          node --check src/main.js
+          node --check src/preload.js
+          node --check src/renderer.js
+          node -e "const c=require('./src/catalog.json'); if(new Set(c.map(x=>x.id)).size!==c.length) process.exit(1)"
+      - name: Package without publishing
+        run: npx electron-builder --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mau-launcher-${{ matrix.os }}
+          path: dist/
+          if-no-files-found: warn
