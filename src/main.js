@@ -155,7 +155,7 @@ app.whenReady().then(() => {
     });
     if (result.canceled || !result.filePaths?.[0]) return { cancelled: true };
     const selected = path.resolve(result.filePaths[0]);
-    if (!fs.statSync(selected).isFile()) return { error: 'Selecciona un ejecutable válido' };
+    if (!(fs.statSync(selected).isFile() || (process.platform === 'darwin' && selected.endsWith('.app') && fs.statSync(selected).isDirectory()))) return { error: 'Selecciona un ejecutable válido' };
     const registry = getRegistry();
     registry[id] = { path: selected };
     saveRegistry(registry);
