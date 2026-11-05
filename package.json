@@ -1,13 +1,14 @@
 {
   "name": "mau-launcher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Centro de aplicaciones de Mau para Windows, macOS y Linux",
   "main": "src/main.js",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
     "dev": "electron .",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js && node --test tests/*.test.js"
   },
   "devDependencies": {
     "electron": "^39.0.0",
@@ -33,7 +34,13 @@
       "target": [
         "AppImage",
         "deb"
-      ]
+      ],
+      "category": "Utility",
+      "maintainer": "Mau Software <144965872+yetsin7@users.noreply.github.com>"
     }
+  },
+  "author": {
+    "name": "Mau Software",
+    "email": "144965872+yetsin7@users.noreply.github.com"
   }
 }
