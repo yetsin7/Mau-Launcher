@@ -6,9 +6,7 @@
     "category": "Arquitectura",
     "description": "Modelado BIM, planos y render arquitectónico.",
     "platforms": [
-      "win32",
-      "darwin",
-      "linux"
+      "win32"
     ]
   },
   {
