@@ -43,18 +43,6 @@
     ]
   },
   {
-    "id": "bible",
-    "name": "Mi Biblia PC",
-    "repo": "yetsin7/mi_biblia_pc",
-    "category": "Lectura",
-    "description": "Aplicación de lectura bíblica para computadora.",
-    "platforms": [
-      "win32",
-      "darwin",
-      "linux"
-    ]
-  },
-  {
     "id": "openrender",
     "name": "OpenRender",
     "repo": "yetsin7/OpenRender",
@@ -108,6 +96,18 @@
     "repo": "yetsin7/youtube_download",
     "category": "Multimedia",
     "description": "Utilidad de descarga; instalador por verificar.",
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ]
+  },
+  {
+    "id": "tts",
+    "name": "Mau TTS",
+    "repo": "yetsin7/TTS",
+    "category": "Accesibilidad",
+    "description": "Herramientas de síntesis de voz con proyecto de escritorio; instaladores pendientes.",
     "platforms": [
       "win32",
       "darwin",
